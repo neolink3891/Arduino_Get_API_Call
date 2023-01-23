@@ -15,5 +15,22 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
 <div>
   <h2>Code Explanation</h2>
   <p>The following code connects to a Network and reads a PIN from a Keypad, this PIN is used as parameter to make a GET call to a Web API.</p>
-  <p>Libraries: Keypad.h - SPI.h - Ethernet.h</p>
+  <p>Libraries: 
+    <ul>
+      <li>Keypad.h</li>
+      <li>SPI.h</li>
+      <li>Ethernet.h</li>
+    </ul>
+  </p>
+</div>
+<div>
+  <h2>Start up Network Variables</h2>
+  <p>
+   As you know, the Arduino Ethernet Shield must be configured manually with an MAC Address and some basic info such as the assigned IP Address and the DNS Address, for this example, their values are:
+    <ul>
+      <li><i>byte mac[] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDA, 0x03 };</i> - setting up MAC Address</li>
+      <li><i>IPAddress ip(192, 168, 1, 158);</i> - Assingning local IP</li>
+      <li><i>IPAddress myDns(192, 168, 1, 254);</i> - Current DNS Address</li>
+    </ul>
+  </p>
 </div>
