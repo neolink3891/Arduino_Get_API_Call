@@ -13,8 +13,11 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
   </ul>
 </div>
 <div>
-  <h2>Code Explanation</h2>
-  <p>The following code connects to a Network and reads a PIN from a Keypad, this PIN is used as parameter to make a GET call to a Web API.</p>
+  The code is used to connect to a Network by using an Arduino Ethernet Shield, it then reads a PIN from a Keypad, the PIN is input in the Keypad starting with * + 4 digits number + #, this PIN is used as parameter to make a GET call to a Web API.
+</div>
+<div>
+  <h2>Libraries</h2>
+  <p>This example uses the following libraries:</p>
   <p>Libraries: 
     <ul>
       <li>Keypad.h</li>
