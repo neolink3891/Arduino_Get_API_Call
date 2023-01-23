@@ -48,4 +48,8 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
     <b>catchInputEntry()</b><br />
     This function is reading from Serial any incoming data from Keypad, each new key pressed in the Keypad is added to a string while cheking for characters * for new PIN and # for ending PIN char, characters between those two values are stored in <i>lpass<i/> variable
   </p>
+  <p>
+    <b>makeCall(char ser[], String req, String act, String hos)</b><br />
+    This functions does the API call by taking <i>ser</i> as first parameter, <i>req</i> as "GET /url_complement?get=variables HTTP/1.1" where GET must start the string and end with HTTP/1.1 while the middle value is the rest of the url + any GET paramenter passed being in this case the PIN, <i>act</i> which is a 3 characters code used to filter actions, and finally <i>hos</i> as "Host: domain.com" which has to start with Host: and the API url.
+  </p>
 <div>
