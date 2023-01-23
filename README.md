@@ -52,6 +52,6 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
     <b>makeCall(char ser[], String req, String act, String hos)</b><br />
     This functions does the API call by taking <i>ser</i> as first parameter, <i>req</i> as "GET /url_complement?get=variables HTTP/1.1" where GET must start the string and end with HTTP/1.1 while the middle value is the rest of the url + any GET paramenter passed being in this case the PIN, <i>act</i> which is a 3 characters code used to filter actions, and finally <i>hos</i> as "Host: domain.com" which has to start with Host: and the API url.
   </p>
-  <p>parseLNSData()</p><br />
+  <b>parseLNSData()</b><br />
   This function runs in the main loop and is checking the status of Ethernet client and <i>curAct</i> variable, if the Ethernet client has completed to load it will display in Serial output any incomming data. If it is waiting for an action, if <i>curAct</i> value is PIN then it makes an API call.
 <div>
