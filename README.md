@@ -46,7 +46,7 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
   </p>
   <p>
     <b>catchInputEntry()</b><br />
-    This function is reading from Serial any incoming data from Keypad, each new key pressed in the Keypad is added to a string while cheking for characters * for new PIN and # for ending PIN char, characters between those two values are stored in <i>lpass<i/> variable
+    This function is reading from Serial any incoming data from Keypad, each new key pressed in the Keypad is added to a string while cheking for characters * for new PIN and # for ending PIN char, characters between those two values are stored in <i>lpass</i> variable
   </p>
   <p>
     <b>makeCall(char ser[], String req, String act, String hos)</b><br />
