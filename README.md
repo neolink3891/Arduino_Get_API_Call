@@ -13,7 +13,8 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
   </ul>
 </div>
 <div>
-  The code is used to connect to a Network by using an Arduino Ethernet Shield, it then reads a PIN from a Keypad, the PIN is input in the Keypad starting with * + 4 digits number + #, this PIN is used as parameter to make a GET call to a Web API.
+  <h2>Overview</h2>
+  The code is used to connect to a Network by using an Arduino Ethernet Shield, it then reads a PIN from a Keypad, the PIN is input in the Keypad starting    with * + 4 digits number + #, this PIN is used as parameter to make a GET call to a Web API.
 </div>
 <div>
   <h2>Libraries</h2>
@@ -37,3 +38,14 @@ Arduino code reading from a Keypad and making an API Call via GET Request using 
     </ul>
   </p>
 </div>
+<div>
+  <h2>Functions</h2>
+  <p>
+    <b>setupNetworkInterface()</b><br />
+    This functions sets up the Network Interface by checking the presence and status of the Network Adapter passing the MAC Address defined, the assigned IP Address and the DNS Address, all of them from the start up variables.
+  </p>
+  <p>
+    <b>catchInputEntry()</b><br />
+    This function is reading from Serial any incoming data from Keypad, each new key pressed in the Keypad is added to a string while cheking for characters * for new PIN and # for ending PIN char, characters between those two values are stored in <i>lpass<i/> variable
+  </p>
+<div>
